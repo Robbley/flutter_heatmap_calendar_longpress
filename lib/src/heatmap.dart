@@ -53,6 +53,12 @@ class HeatMap extends StatefulWidget {
   /// Parameter gives clicked [DateTime] value.
   final Function(DateTime)? onClick;
 
+  /// Function that will be called when a block is longpressed.
+  ///
+  /// Parameter gives longpressed [DateTime] value.
+  final Function(DateTime)? onLongPress;
+
+
   /// The margin value for every block.
   final EdgeInsets? margin;
 
@@ -97,6 +103,7 @@ class HeatMap extends StatefulWidget {
     this.size = 20,
     this.fontSize,
     this.onClick,
+    this.onLongPress,
     this.margin,
     this.borderRadius,
     this.datasets,
@@ -144,6 +151,7 @@ class _HeatMap extends State<HeatMap> {
           colorsets: widget.colorsets,
           borderRadius: widget.borderRadius,
           onClick: widget.onClick,
+          onLongPress: widget.onLongPress,
           margin: widget.margin,
           showText: widget.showText,
         )),
