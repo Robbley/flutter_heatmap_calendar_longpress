@@ -61,6 +61,9 @@ class HeatMapCalendarPage extends StatelessWidget {
   /// Paratmeter gives clicked [DateTime] value.
   final Function(DateTime)? onClick;
 
+  /// Parameter gives longpressed [DateTime] value.
+  final Function(DateTime)? onLongPress;
+
   HeatMapCalendarPage({
     Key? key,
     required this.baseDate,
