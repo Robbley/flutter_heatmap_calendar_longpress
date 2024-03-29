@@ -10,7 +10,7 @@ class HeatMapCalendarPage extends StatelessWidget {
 
   /// The list value of the map value that contains
   /// separated start and end of every weeks on month.
-  ///
+  /// 
   /// Separate [datasets] using [DateUtil.separatedMonth].
   final List<Map<DateTime, DateTime>> separatedDate;
 
